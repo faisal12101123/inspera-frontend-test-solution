@@ -1,0 +1,59 @@
+:root {
+  --background-color: white;
+  --header--background-color: white;
+  --theme-toggle--background-color: white;
+  --color: black;
+}
+[data-theme='dark'] {
+  --header--background-color: #3a3a3a;
+  --background-color:#1a1818;
+  --theme-toggle--background-color:#585555;
+  --color:#ffffff;
+}
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  background-color: var(--header--background-color);
+  position: relative;
+  display: flow-root;
+  color: var(--color);
+}
+
+.candidate {
+  padding: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  float: left;
+} 
+
+.time-remaining {
+  padding: 1rem;
+  float: left;
+}
+
+.vertical-line{
+  float: right;
+  border-left: .1rem solid #918e8e;
+  padding-bottom: 1.2rem;
+  background-color: var(--theme-toggle--background-color);
+}
+
+.theme-toggle {
+  margin: 0.5em;
+  margin-top: 1rem;
+  float: right;
+  background-color: var(--theme-toggle--background-color);
+  color: var(--color);
+  border: white;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .candidate {
+    float: unset;
+  }
+  .vertical-line {
+    border-top: 0.1rem solid #918e8e;
+  }
+}

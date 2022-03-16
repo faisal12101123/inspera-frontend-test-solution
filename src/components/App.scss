@@ -1,0 +1,35 @@
+.app-wrapper {
+  .body {
+    padding: 1em;
+  }
+  .text-interaction {
+    label {
+      align-items: center;
+      color: var(--mpc-interaction--label-color);
+      background: var(--mpc-interaction--label-background);
+      max-width: 40em;
+    }
+  }
+  .mpc-interaction {
+    background-color: var(--background-color);
+    width: 70%;
+    color: var(--color);
+  }
+  .mpc-row-div-top {
+    border-top: 1px solid #ccc;
+  }
+  .mpc-row-div {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 0.25rem;
+  }
+  .mpc-row-input {
+    float: left;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+  }
+  .mpc-row-p {
+    display: inline-table;
+    margin-left: 1rem;
+  }
+}
